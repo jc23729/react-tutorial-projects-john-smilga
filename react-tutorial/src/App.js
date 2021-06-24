@@ -3,9 +3,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>This is a bookstore</h1>
+      
       <BookList />
-      <Image />
+      
     </div>
   );
 }
@@ -19,16 +19,15 @@ function BookList() {
 }
 
 const Book = () => {
-  return <article>this is a car</article>;
+
+  const title = 'I love you to the moon and back';
+  return (
+    <article className></article>
+  );
+  
 };
 
-const Image = () => {
-  return (
-    <img
-      src="https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg"
-      alt=""
-    />
-  );
-};
+
+
 
 export default App;
