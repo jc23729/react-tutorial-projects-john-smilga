@@ -3,9 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      
       <BookList />
-      
     </div>
   );
 }
@@ -19,8 +17,7 @@ function BookList() {
 }
 
 const Book = () => {
-
-  const title = 'I love you to the moon and back';
+  const title = "I love you to the moon and back";
   return (
     <article className="book">
       <img
@@ -32,10 +29,6 @@ const Book = () => {
       <h4>Amelia Hepworth</h4>
     </article>
   );
-  
 };
-
-
-
 
 export default App;
