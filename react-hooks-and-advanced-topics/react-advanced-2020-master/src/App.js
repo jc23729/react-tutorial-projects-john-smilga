@@ -1,8 +1,10 @@
 import React from 'react'
+import setup from '/tutorial/1-userState/setup/1-error-example'
+
 function App() {
   return (
     <div className='container'>
-      <h2>Advanced Tutorial</h2>
+      <Setup/>
     </div>
   )
 }
