@@ -22,19 +22,13 @@ const books = [
 ];
 const names = ["john", "peter", "susan"];
 const newName = names.map((name) => {
-  return <h1>{ name }</h1>
- 
+  return <h1>{name}</h1>;
 });
 
- console.log(newName);
-
+console.log(newName);
 
 function BookList() {
-  return (
-    <section className="booklist">
-     {names}
-    </section>
-  );
+  return <section className="booklist">{newNames}</section>;
 }
 //you can destructure it like this as well inside the function parameters. const Book = ({img, title, authour}) => {
 const Book = () => {
