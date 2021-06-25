@@ -1,5 +1,5 @@
 import "./App.css";
-import books from "./books"
+import books from "./books";
 
 // showing nested components
 function App() {
@@ -14,20 +14,26 @@ function BookList() {
   return (
     <section className="booklist">
       {books.map((book) => {
-        const { img, title, author } = book;
-        return <Book key ={book.id} book={book}></Book>;
+       
+        return <Book key={book.id} book={book}></Book>;
       })}
     </section>
   );
 }
 //you can destructure it like this as well inside the function parameters. const Book = ({img, title, authour}) => {
-const Book = (props) => {
-  const { img, title, author } = props.book;
+const Book = (img, title, author) => {
+  //attribute, and eventHandler
+  //onClick, onMouseOver
+
+  const clickHandler = (event) => {
+    alert('This is going to pay off')
+  }
   return (
     <article className="book">
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      <button type="button" onClick={clickHandler}></button>
     </article>
   );
 };
