@@ -1,4 +1,5 @@
 import "./App.css";
+import "./books"
 // showing nested components
 function App() {
   return (
@@ -7,19 +8,6 @@ function App() {
     </div>
   );
 }
-
-const books = [
-  {
-    img: "https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg",
-    title: "I Love You to the Moon and Back",
-    author: "Amelia Hepworth",
-  },
-  {
-    img: "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL._AC_UL200_SR200,200_.jpg",
-    title: "Our Class is a Family",
-    author: "Shannon Olsen",
-  },
-];
 
 function BookList() {
   return (
@@ -33,7 +21,7 @@ function BookList() {
 }
 //you can destructure it like this as well inside the function parameters. const Book = ({img, title, authour}) => {
 const Book = (props) => {
-  const { img, title, author } = props;
+  const { img, title, author } = props.book;
   return (
     <article className="book">
       <img src={img} alt="" />
