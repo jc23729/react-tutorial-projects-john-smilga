@@ -16,6 +16,15 @@ function BookList() {
   );
 }
 
+
+const Book = (props) => {
+  const { img, title, author } = props;
+  return (
+    <article className="book"><img src={img} alt='' /></article>
+    
+  )
+}
+ 
 const Book = () => {
   const title = "I love you to the moon and back";
   return (
@@ -25,8 +34,7 @@ const Book = () => {
         alt=""
       />
 
-      <h1>{title}</h1>
-      <h4>Amelia Hepworth</h4>
+   
     </article>
   );
 };
