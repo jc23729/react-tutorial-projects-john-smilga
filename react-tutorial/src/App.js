@@ -1,5 +1,5 @@
 import "./App.css";
-import "./books"
+import books from "./books"
 
 // showing nested components
 function App() {
