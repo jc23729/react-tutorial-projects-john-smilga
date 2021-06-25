@@ -20,20 +20,19 @@ const books = [
     author: "Shannon Olsen",
   },
 ];
-const names = ["john", "peter", "susan"];
-const newName = names.map((name) => {
-  return <h1>{name}</h1>;
-});
-
-console.log(newName);
 
 function BookList() {
-  return <section className="booklist">{books.map((book) => {
-    return ('hello');
-  })}</section>;
+  return (
+    <section className="booklist">
+      {books.map((book) => {
+        const { img, title, author } = book;
+        return <Book img={img}></Book>;
+      })}
+    </section>
+  );
 }
 //you can destructure it like this as well inside the function parameters. const Book = ({img, title, authour}) => {
-const Book = () => {
+const Book = (props) => {
   const { img, title, author } = props;
   return (
     <article className="book">
