@@ -8,7 +8,6 @@ function App() {
   );
 }
 
-
 const books = [
   {
     img: "https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg",
@@ -21,11 +20,19 @@ const books = [
     author: "Shannon Olsen",
   },
 ];
+const names = ["john", "peter", "susan"];
+const newName = names.map((name) => {
+  return <h1>{ name }</h1>
+ 
+});
+
+ console.log(newName);
+
 
 function BookList() {
   return (
-    <section>
-      <Book />
+    <section className="booklist">
+     {names}
     </section>
   );
 }
@@ -40,7 +47,5 @@ const Book = () => {
     </article>
   );
 };
-
-
 
 export default App;
