@@ -1,5 +1,6 @@
 import "./App.css";
 import "./books"
+
 // showing nested components
 function App() {
   return (
@@ -14,7 +15,7 @@ function BookList() {
     <section className="booklist">
       {books.map((book) => {
         const { img, title, author } = book;
-        return <Book img={img}></Book>;
+        return <Book key ={book.id} book={book}></Book>;
       })}
     </section>
   );
