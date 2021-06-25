@@ -1,5 +1,5 @@
 import "./App.css";
-import books from "./books";
+import {books} from './books'
 
 // showing nested components
 function App() {
@@ -15,7 +15,7 @@ function BookList() {
     <section className="booklist">
       {books.map((book) => {
        
-        return <Book key={book.id} book={book}></Book>;
+        return <Book key={books.id}{books...}></Book>;
       })}
     </section>
   );

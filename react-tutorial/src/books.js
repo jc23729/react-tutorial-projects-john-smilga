@@ -18,5 +18,3 @@ export const books = [
     author: "Brit Bennett",
   },
 ];
-
-export default books;
