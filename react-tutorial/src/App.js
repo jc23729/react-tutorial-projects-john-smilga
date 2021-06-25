@@ -28,7 +28,9 @@ const newName = names.map((name) => {
 console.log(newName);
 
 function BookList() {
-  return <section className="booklist">{newNames}</section>;
+  return <section className="booklist">{books.map((book) => {
+    return ('hello');
+  })}</section>;
 }
 //you can destructure it like this as well inside the function parameters. const Book = ({img, title, authour}) => {
 const Book = () => {
