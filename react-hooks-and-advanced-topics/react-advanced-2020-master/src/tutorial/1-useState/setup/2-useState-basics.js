@@ -3,8 +3,11 @@ import React, { useState } from "react";
 
 const UseStateBasics = () => {
   const [text, setText] = useState("useState using text, setText. Press the Change Title to change the Title");
+  
   const handleClick = () => {
-    setText("Woop, woop, you changed my state");
+    if (text === 'random title') {
+      setText('Hello World');
+    }
   };
 
   return (
