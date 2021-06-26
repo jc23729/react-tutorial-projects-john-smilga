@@ -6,6 +6,7 @@ const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
 
   const removeItem = (id) => {
+    // we pass in the id, then filter out our array, and all items who are not ! patching with the id, those are returning as newPeople
     let newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
