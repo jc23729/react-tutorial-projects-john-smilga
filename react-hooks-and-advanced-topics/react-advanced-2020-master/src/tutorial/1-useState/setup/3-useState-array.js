@@ -4,6 +4,8 @@ import { data } from "../../../data";
 const UseStateArray = () => {
   // this is a diffrent pay to pass use state  React. or import it
   const [people, setPeople] = React.useState(data);
+
+  const removeItem = () => {}
   return (
     <>
       {people.map((person) => {
@@ -11,6 +13,8 @@ const UseStateArray = () => {
         return (
           <div key={id} className="item">
             <h4>{name}</h4>
+            {/* creating a button to remove an individual item/ in this example were creating a function then calling it versus doing it inline */}
+            <button onClick={() => removeItem(id)}>remove item</button>
           </div>
         );
       })}
