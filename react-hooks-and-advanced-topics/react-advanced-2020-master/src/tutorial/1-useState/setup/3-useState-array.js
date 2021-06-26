@@ -14,7 +14,9 @@ const UseStateArray = () => {
           </div>
         );
       })}
-  {/*  */}
+  {/* we want to invoke or activate it only when we click it, so we setup an arrow function
+  so to clear it then we pass in the empty arrays
+  */}
       <button className="btn" onClick={() => setPeople([])}>
         clear items
       </button>
