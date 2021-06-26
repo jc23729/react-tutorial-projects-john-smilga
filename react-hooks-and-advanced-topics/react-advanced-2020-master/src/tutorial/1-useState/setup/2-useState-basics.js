@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-//usestate is a function, its a named import
+//use
+//component name must be uppercase
+//must be in the function/body     
+//cannot call conditonally
 
 const UseStateBasics = () => {
   const [text, setText] = useState("random title");
