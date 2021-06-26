@@ -5,7 +5,10 @@ const UseStateArray = () => {
   // this is a diffrent pay to pass use state  React. or import it
   const [people, setPeople] = React.useState(data);
 
-  const removeItem = () => {}
+  const removeItem = (id) => {
+    let newPeople = people.filter((person) => person.id !== id)
+    setPeople(newPeople);
+  }
   return (
     <>
       {people.map((person) => {
