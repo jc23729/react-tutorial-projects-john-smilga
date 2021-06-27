@@ -10,7 +10,9 @@ const UseEffectFetchData = () => {
     const users = await response.json();
     console.log(users);
   };
-  useEffect(() => {});
+  useEffect(() => {
+    getUsers();
+  });
   return (
     <>
       <h3>github users</h3>
