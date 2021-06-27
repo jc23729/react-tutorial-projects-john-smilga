@@ -5,7 +5,7 @@ const url = "https://api.github.com/users";
 const UseEffectFetchData = () => {
   const [users, setUsers] = useState([]);
 
-  UseEffect(() => {});
+  useEffect(() => {});
   return (
     <>
       <h3>github users</h3>
