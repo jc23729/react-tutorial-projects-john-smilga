@@ -12,12 +12,15 @@ const UseEffectFetchData = () => {
   };
   useEffect(() => {
     getUsers();
-  });
+  }, []);
   return (
     <>
       <h3>github users</h3>
+      {users.map((user) => {
+        return <li></li>
+      })}
     </>
   );
 };
-
+               
 export default UseEffectFetchData;
