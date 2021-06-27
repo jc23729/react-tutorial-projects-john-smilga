@@ -9,6 +9,7 @@ const UseEffectCleanup = () => {
 
     //will update the size every time
   const checkSize = () => {
+    // setSize is triggering the rerender
     setSize(window.innerWidth);
   };
   // we use our callback function and add our eventListener listening to our resize event
