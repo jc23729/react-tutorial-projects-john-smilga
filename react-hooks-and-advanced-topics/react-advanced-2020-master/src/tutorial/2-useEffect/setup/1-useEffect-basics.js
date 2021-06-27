@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // by default runs after every re-render
 // cleanup function
 // second parameter
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
   // every function we place will run after we re-render
-  useEffect(() => {
-    
-  })
+  useEffect(() => {});
   return (
     <>
       <h1>{value}</h1>
