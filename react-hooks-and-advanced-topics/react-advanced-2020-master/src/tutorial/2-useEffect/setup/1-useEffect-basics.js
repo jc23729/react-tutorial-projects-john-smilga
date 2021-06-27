@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 // cleanup function
 // second parameter
 const UseEffectBasics = () => {
+  const [value, setValue] = useState(0);
   // every function we place will run after we re-render
   useEffect(() => {
-    const [value, setValue] = useState(0);
+    
   })
   return (
     <>
